@@ -1,0 +1,28 @@
+{
+  "name": "morse-decode-stream",
+  "version": "0.0.0",
+  "description": "morse decode stream",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jarofghosts/morse-decode-stream.git"
+  },
+  "keywords": [
+    "morse",
+    "code",
+    "decode",
+    "stream"
+  ],
+  "author": "jesse keane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarofghosts/morse-decode-stream/issues"
+  },
+  "homepage": "https://github.com/jarofghosts/morse-decode-stream"
+}
