@@ -1,6 +1,6 @@
 {
   "name": "morse-decode-stream",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "morse decode stream",
   "main": "index.js",
   "directories": {
