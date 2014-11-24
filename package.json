@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
   "dependencies": {
     "morse-decodes": "0.0.0",
     "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
   }
 }

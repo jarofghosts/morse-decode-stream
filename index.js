@@ -1,23 +1,24 @@
-var through = require('through'),
-    codes = require('morse-decodes')
+var codes = require('morse-decodes')
+  , through = require('through')
 
-module.exports = morse_stream
+module.exports = morseStream
 
-function morse_stream() {
-  var stream = through(convert_word)
+function morseStream() {
+  var stream = through(convertWord)
 
   return stream
 
-  function convert_word(word) {
-    var bits = word.toString().split(' '),
-        morse = [],
-        code,
-        bit
+  function convertWord(word) {
+    var bits = word.toString().split(' ')
+      , morse = []
+      , code
+      , bit
 
-    for (var i = 0, l = bits.length; i < l; ++i) {
+    for(var i = 0, l = bits.length; i < l; ++i) {
       bit = bits[i]
       code = codes[bit]
-      if (code) morse.push(code)
+
+      if(code) morse.push(code)
     }
 
     stream.queue(morse.join(''))
