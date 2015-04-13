@@ -27,9 +27,9 @@
   "homepage": "https://github.com/jarofghosts/morse-decode-stream",
   "dependencies": {
     "morse-decodes": "0.0.0",
-    "through": "~2.3.4"
+    "through2": "^0.6.5"
   },
   "devDependencies": {
-    "tape": "^3.0.3"
+    "tape": "^4.0.0"
   }
 }

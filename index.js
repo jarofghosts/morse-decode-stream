@@ -1,5 +1,5 @@
 var codes = require('morse-decodes')
-  , through = require('through')
+  , through = require('through2')
 
 module.exports = morseStream
 
@@ -8,7 +8,7 @@ function morseStream() {
 
   return stream
 
-  function convertWord(word) {
+  function convertWord(word, _, next) {
     var bits = word.toString().split(' ')
       , morse = []
       , code
@@ -18,9 +18,13 @@ function morseStream() {
       bit = bits[i]
       code = codes[bit]
 
-      if(code) morse.push(code)
+      if(code) {
+        morse.push(code)
+      }
     }
 
-    stream.queue(morse.join(''))
+    stream.push(morse.join(''))
+
+    next()
   }
 }

@@ -1,7 +1,7 @@
-morse-decode-stream
-====
+# morse-decode-stream
 
-[![Build Status](https://travis-ci.org/jarofghosts/morse-decode-stream.png?branch=master)](https://travis-ci.org/jarofghosts/morse-decode-stream)
+[![Build Status](http://img.shields.io/travis/jarofghosts/morse-decode-stream.svg?style=flat)](https://travis-ci.org/jarofghosts/morse-decode-stream)
+[![npm install](http://img.shields.io/npm/dm/morse-decode-stream.svg?style=flat)](https://www.npmjs.org/package/morse-decode-stream)
 
 transform morse code into words
 

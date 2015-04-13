@@ -8,13 +8,13 @@ test('turns morse code into words', function(t) {
   var morse = morseStream()
 
   morse.once('data', function(chunk) {
-    t.equal(chunk, 'HELLO,')
+    t.equal(chunk.toString(), 'HELLO,')
   })
 
   morse.write('.... . .-.. .-.. --- --..--')
 
   morse.once('data', function(chunk) {
-    t.equal(chunk, 'WORLD')
+    t.equal(chunk.toString(), 'WORLD')
   })
 
   morse.write('.-- --- .-. .-.. -..')
